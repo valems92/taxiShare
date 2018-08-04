@@ -1,0 +1,630 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B309DB1E210DC1440059991D /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B309DB1D210DC1440059991D /* Utils.swift */; };
+		B309DB27210DD2CF0059991D /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B309DB26210DD2CF0059991D /* SearchViewController.swift */; };
+		B309DB2E210DFF190059991D /* SearchSchema.swift in Sources */ = {isa = PBXBuildFile; fileRef = B309DB2D210DFF190059991D /* SearchSchema.swift */; };
+		B309DB34210E13C30059991D /* SuggestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B309DB33210E13C30059991D /* SuggestionsViewController.swift */; };
+		B36E33ED210785FD00B6C7DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36E33EC210785FD00B6C7DF /* AppDelegate.swift */; };
+		B36E33EF210785FD00B6C7DF /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36E33EE210785FD00B6C7DF /* RootViewController.swift */; };
+		B36E33F2210785FD00B6C7DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B36E33F0210785FD00B6C7DF /* Main.storyboard */; };
+		B36E33F4210785FF00B6C7DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B36E33F3210785FF00B6C7DF /* Assets.xcassets */; };
+		B36E33F7210785FF00B6C7DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B36E33F5210785FF00B6C7DF /* LaunchScreen.storyboard */; };
+		B36E340321078F4E00B6C7DF /* ButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36E340221078F4E00B6C7DF /* ButtonExtension.swift */; };
+		B36E34052107947A00B6C7DF /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36E34042107947A00B6C7DF /* RegisterViewController.swift */; };
+		B36E34072107948700B6C7DF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36E34062107948700B6C7DF /* LoginViewController.swift */; };
+		B36E3461210D9D7000B6C7DF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B36E3460210D9D6F00B6C7DF /* GoogleService-Info.plist */; };
+		B3E2685F210F47110021F331 /* MyAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E2685E210F47110021F331 /* MyAccountViewController.swift */; };
+		B3E26862210F4A9D0021F331 /* MyDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E26861210F4A9D0021F331 /* MyDetailsViewController.swift */; };
+		B3E26864210F53190021F331 /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E26863210F53190021F331 /* ChangePasswordViewController.swift */; };
+		B3E26866210F59290021F331 /* SearchHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E26865210F59290021F331 /* SearchHistoryViewController.swift */; };
+		B3E26868210F73340021F331 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E26867210F73340021F331 /* ChatViewController.swift */; };
+		B3E268872115EAAB0021F331 /* Flights.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E268862115EAAB0021F331 /* Flights.swift */; };
+		CAADEB620AF20EB3ACEFB378 /* Pods_taxiShare.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36C7E1C4909EFBDE76241178 /* Pods_taxiShare.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B36E345E210D974200B6C7DF /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		24BEF573E7D4A9F74C90E284 /* Pods-taxiShare.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-taxiShare.release.xcconfig"; path = "Pods/Target Support Files/Pods-taxiShare/Pods-taxiShare.release.xcconfig"; sourceTree = "<group>"; };
+		36C7E1C4909EFBDE76241178 /* Pods_taxiShare.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_taxiShare.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		65FFDC7727C65E30B820A168 /* Pods-taxiShare.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-taxiShare.debug.xcconfig"; path = "Pods/Target Support Files/Pods-taxiShare/Pods-taxiShare.debug.xcconfig"; sourceTree = "<group>"; };
+		B309DB1D210DC1440059991D /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		B309DB26210DD2CF0059991D /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		B309DB2D210DFF190059991D /* SearchSchema.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchSchema.swift; sourceTree = "<group>"; };
+		B309DB33210E13C30059991D /* SuggestionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestionsViewController.swift; sourceTree = "<group>"; };
+		B36E33E9210785FD00B6C7DF /* taxiShare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = taxiShare.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B36E33EC210785FD00B6C7DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B36E33EE210785FD00B6C7DF /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		B36E33F1210785FD00B6C7DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B36E33F3210785FF00B6C7DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B36E33F6210785FF00B6C7DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B36E33F8210785FF00B6C7DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B36E340221078F4E00B6C7DF /* ButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonExtension.swift; sourceTree = "<group>"; };
+		B36E34042107947A00B6C7DF /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		B36E34062107948700B6C7DF /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		B36E3460210D9D6F00B6C7DF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B3E2685E210F47110021F331 /* MyAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAccountViewController.swift; sourceTree = "<group>"; };
+		B3E26861210F4A9D0021F331 /* MyDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDetailsViewController.swift; sourceTree = "<group>"; };
+		B3E26863210F53190021F331 /* ChangePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewController.swift; sourceTree = "<group>"; };
+		B3E26865210F59290021F331 /* SearchHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchHistoryViewController.swift; sourceTree = "<group>"; };
+		B3E26867210F73340021F331 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		B3E268862115EAAB0021F331 /* Flights.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flights.swift; sourceTree = "<group>"; };
+		B3E268882115F0310021F331 /* taxiShare.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = taxiShare.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B36E33E6210785FD00B6C7DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAADEB620AF20EB3ACEFB378 /* Pods_taxiShare.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4FBCB712A1691CB7A987FCA1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				36C7E1C4909EFBDE76241178 /* Pods_taxiShare.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B309DB2C210DFF050059991D /* Schemas */ = {
+			isa = PBXGroup;
+			children = (
+				B309DB2D210DFF190059991D /* SearchSchema.swift */,
+			);
+			path = Schemas;
+			sourceTree = "<group>";
+		};
+		B36E33E0210785FD00B6C7DF = {
+			isa = PBXGroup;
+			children = (
+				B36E33EB210785FD00B6C7DF /* taxiShare */,
+				B36E33EA210785FD00B6C7DF /* Products */,
+				4FBCB712A1691CB7A987FCA1 /* Frameworks */,
+				CD5B3F304E79951FDE457740 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		B36E33EA210785FD00B6C7DF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B36E33E9210785FD00B6C7DF /* taxiShare.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B36E33EB210785FD00B6C7DF /* taxiShare */ = {
+			isa = PBXGroup;
+			children = (
+				B3E268882115F0310021F331 /* taxiShare.entitlements */,
+				B3E268852115E22C0021F331 /* Utils */,
+				B309DB2C210DFF050059991D /* Schemas */,
+				B36E340121078F2900B6C7DF /* View Extensions */,
+				B36E34002107863300B6C7DF /* Resources */,
+				B36E33FF2107861200B6C7DF /* View Controllers */,
+				B36E33FE2107860400B6C7DF /* Storyboards */,
+				B36E33EC210785FD00B6C7DF /* AppDelegate.swift */,
+				B36E33F8210785FF00B6C7DF /* Info.plist */,
+				B36E3460210D9D6F00B6C7DF /* GoogleService-Info.plist */,
+			);
+			path = taxiShare;
+			sourceTree = "<group>";
+		};
+		B36E33FE2107860400B6C7DF /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				B36E33F5210785FF00B6C7DF /* LaunchScreen.storyboard */,
+				B36E33F0210785FD00B6C7DF /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		B36E33FF2107861200B6C7DF /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B36E33EE210785FD00B6C7DF /* RootViewController.swift */,
+				B36E34042107947A00B6C7DF /* RegisterViewController.swift */,
+				B36E34062107948700B6C7DF /* LoginViewController.swift */,
+				B309DB26210DD2CF0059991D /* SearchViewController.swift */,
+				B309DB33210E13C30059991D /* SuggestionsViewController.swift */,
+				B3E2685E210F47110021F331 /* MyAccountViewController.swift */,
+				B3E26861210F4A9D0021F331 /* MyDetailsViewController.swift */,
+				B3E26863210F53190021F331 /* ChangePasswordViewController.swift */,
+				B3E26865210F59290021F331 /* SearchHistoryViewController.swift */,
+				B3E26867210F73340021F331 /* ChatViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		B36E34002107863300B6C7DF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B36E33F3210785FF00B6C7DF /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B36E340121078F2900B6C7DF /* View Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B36E340221078F4E00B6C7DF /* ButtonExtension.swift */,
+			);
+			path = "View Extensions";
+			sourceTree = "<group>";
+		};
+		B3E268852115E22C0021F331 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				B309DB1D210DC1440059991D /* Utils.swift */,
+				B3E268862115EAAB0021F331 /* Flights.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		CD5B3F304E79951FDE457740 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				65FFDC7727C65E30B820A168 /* Pods-taxiShare.debug.xcconfig */,
+				24BEF573E7D4A9F74C90E284 /* Pods-taxiShare.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B36E33E8210785FD00B6C7DF /* taxiShare */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B36E33FB210785FF00B6C7DF /* Build configuration list for PBXNativeTarget "taxiShare" */;
+			buildPhases = (
+				5683FBF5C327F61D8CB4B7CA /* [CP] Check Pods Manifest.lock */,
+				B36E33E5210785FD00B6C7DF /* Sources */,
+				B36E33E6210785FD00B6C7DF /* Frameworks */,
+				B36E33E7210785FD00B6C7DF /* Resources */,
+				B36E345E210D974200B6C7DF /* Embed Frameworks */,
+				7105567612E55BDF7DE04E0D /* [CP] Copy Pods Resources */,
+				69D01E1CC0272AD5D70E6EEF /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = taxiShare;
+			productName = taxiShare;
+			productReference = B36E33E9210785FD00B6C7DF /* taxiShare.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B36E33E1210785FD00B6C7DF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Munoz, Valentina";
+				TargetAttributes = {
+					B36E33E8210785FD00B6C7DF = {
+						CreatedOnToolsVersion = 9.4.1;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = B36E33E4210785FD00B6C7DF /* Build configuration list for PBXProject "taxiShare" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B36E33E0210785FD00B6C7DF;
+			productRefGroup = B36E33EA210785FD00B6C7DF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B36E33E8210785FD00B6C7DF /* taxiShare */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B36E33E7210785FD00B6C7DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B36E33F7210785FF00B6C7DF /* LaunchScreen.storyboard in Resources */,
+				B36E3461210D9D7000B6C7DF /* GoogleService-Info.plist in Resources */,
+				B36E33F4210785FF00B6C7DF /* Assets.xcassets in Resources */,
+				B36E33F2210785FD00B6C7DF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5683FBF5C327F61D8CB4B7CA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-taxiShare-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		69D01E1CC0272AD5D70E6EEF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-taxiShare/Pods-taxiShare-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/JSQMessagesViewController/JSQMessagesViewController.framework",
+				"${BUILT_PRODUCTS_DIR}/JSQSystemSoundPlayer/JSQSystemSoundPlayer.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSQMessagesViewController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSQSystemSoundPlayer.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-taxiShare/Pods-taxiShare-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7105567612E55BDF7DE04E0D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-taxiShare/Pods-taxiShare-resources.sh",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-taxiShare/Pods-taxiShare-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B36E33E5210785FD00B6C7DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B36E340321078F4E00B6C7DF /* ButtonExtension.swift in Sources */,
+				B309DB27210DD2CF0059991D /* SearchViewController.swift in Sources */,
+				B3E268872115EAAB0021F331 /* Flights.swift in Sources */,
+				B3E2685F210F47110021F331 /* MyAccountViewController.swift in Sources */,
+				B36E33EF210785FD00B6C7DF /* RootViewController.swift in Sources */,
+				B3E26862210F4A9D0021F331 /* MyDetailsViewController.swift in Sources */,
+				B36E33ED210785FD00B6C7DF /* AppDelegate.swift in Sources */,
+				B309DB2E210DFF190059991D /* SearchSchema.swift in Sources */,
+				B309DB34210E13C30059991D /* SuggestionsViewController.swift in Sources */,
+				B36E34072107948700B6C7DF /* LoginViewController.swift in Sources */,
+				B3E26864210F53190021F331 /* ChangePasswordViewController.swift in Sources */,
+				B3E26868210F73340021F331 /* ChatViewController.swift in Sources */,
+				B36E34052107947A00B6C7DF /* RegisterViewController.swift in Sources */,
+				B309DB1E210DC1440059991D /* Utils.swift in Sources */,
+				B3E26866210F59290021F331 /* SearchHistoryViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B36E33F0210785FD00B6C7DF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B36E33F1210785FD00B6C7DF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B36E33F5210785FF00B6C7DF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B36E33F6210785FF00B6C7DF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B36E33F9210785FF00B6C7DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B36E33FA210785FF00B6C7DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B36E33FC210785FF00B6C7DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65FFDC7727C65E30B820A168 /* Pods-taxiShare.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = taxiShare/taxiShare.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8Q2F7UY8KD;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseAuth\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseCore\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseDatabase\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseMessaging\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseStorage\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GTMSessionFetcher\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleUtilities\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/JSQMessagesViewController\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/JSQSystemSoundPlayer\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Protobuf\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/leveldb-library\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/nanopb\"",
+					"\"${PODS_ROOT}/FirebaseAnalytics/Frameworks\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/DshareFramework\"",
+					"\"${PODS_ROOT}/FirebaseInstanceID/Frameworks\"",
+					"\"${PODS_ROOT}/GoogleAppMeasurement/Frameworks\"",
+					"\"${PODS_ROOT}/GoogleMaps/Base/Frameworks\"",
+					"\"${PODS_ROOT}/GooglePlaces/Frameworks\"",
+				);
+				HEADER_SEARCH_PATHS = (
+					"${PODS_ROOT}/Headers/Public/Firebase",
+					"${PODS_ROOT}/Headers/Public/DshareFramework",
+					"${PODS_ROOT}/Headers/Public",
+					"${PODS_ROOT}/Firebase/CoreOnly/Sources",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = taxiShare/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dshare.framework.taxiShare;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B36E33FD210785FF00B6C7DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24BEF573E7D4A9F74C90E284 /* Pods-taxiShare.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = taxiShare/taxiShare.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8Q2F7UY8KD;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseAuth\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseCore\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseDatabase\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseMessaging\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseStorage\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GTMSessionFetcher\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleUtilities\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/JSQMessagesViewController\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/JSQSystemSoundPlayer\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Protobuf\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/leveldb-library\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/nanopb\"",
+					"\"${PODS_ROOT}/FirebaseAnalytics/Frameworks\"",
+					"\"${PODS_ROOT}/FirebaseInstanceID/Frameworks\"",
+					"\"${PODS_ROOT}/GoogleAppMeasurement/Frameworks\"",
+					"\"${PODS_ROOT}/GoogleMaps/Base/Frameworks\"",
+					"\"${PODS_ROOT}/GooglePlaces/Frameworks\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/DshareFramework\"",
+				);
+				HEADER_SEARCH_PATHS = (
+					"${PODS_ROOT}/Headers/Public/Firebase",
+					"${PODS_ROOT}/Headers/Public/DshareFramework",
+					"${PODS_ROOT}/Headers/Public",
+					"${PODS_ROOT}/Firebase/CoreOnly/Sources",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = taxiShare/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dshare.framework.taxiShare;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B36E33E4210785FD00B6C7DF /* Build configuration list for PBXProject "taxiShare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B36E33F9210785FF00B6C7DF /* Debug */,
+				B36E33FA210785FF00B6C7DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B36E33FB210785FF00B6C7DF /* Build configuration list for PBXNativeTarget "taxiShare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B36E33FC210785FF00B6C7DF /* Debug */,
+				B36E33FD210785FF00B6C7DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B36E33E1210785FD00B6C7DF /* Project object */;
+}

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>305076821625-amha1g2ec4t4ajf2lcdhlso7b4h4idps.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.305076821625-amha1g2ec4t4ajf2lcdhlso7b4h4idps</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAN_HXnm4HhWLAghGf8lvOpyGL84r7tTZU</string>
+	<key>GCM_SENDER_ID</key>
+	<string>305076821625</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.dshare.framework.taxiShare</string>
+	<key>PROJECT_ID</key>
+	<string>dsharefinalproject</string>
+	<key>STORAGE_BUCKET</key>
+	<string>dsharefinalproject.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true></true>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false></false>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:305076821625:ios:e6a3a65025f2d094</string>
+	<key>DATABASE_URL</key>
+	<string>https://dsharefinalproject.firebaseio.com</string>
+</dict>
+</plist>
