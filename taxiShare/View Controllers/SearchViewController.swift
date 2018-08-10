@@ -235,14 +235,18 @@
                 Utils.instance.displayAlertMessage(messageToDisplay:"Please fill out the airline code and flight number", controller: self)
                 completionHandler(false)
             } else {
-                /* Flights.instance.validateFlightNumber(airlineCode: self.airlineCode.text, flightNumber: self.flightNumber.text, timePickerDate: self.timePicker.date) { (isValid) in
+                Flights.instance.validateFlightNumber(airlineCode: self.airlineCode.text, flightNumber: self.flightNumber.text, timePickerDate: self.timePicker.date) { (isValid, date) in
                     if !isValid {
                         Utils.instance.displayAlertMessage(messageToDisplay:"Invalid Flight", controller: self)
                     }
                     
+                    if date != nil {
+                        self.flightArrivalDate = date
+                    }
+                    
                     completionHandler(isValid)
                 }
-                return */
+                return
             }
         }
         

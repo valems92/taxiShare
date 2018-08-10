@@ -3,11 +3,11 @@ import Foundation
 class Flights {
     static let instance = Flights();
     
-    let APP_ID:String = "65ab1d46"
-    let APP_KEY:String = "3129f0fbc7754049d797043b2e0bff6f"
+    let APP_ID:String = "476a9eaa"
+    let APP_KEY:String = "6e1b7f377bc951faf6b82b6dc90c15f7"
     let API_URL = "https://api.flightstats.com/flex/flightstatus/rest/v2/json/flight/status"
     
-    func validateFlightNumber(airlineCode:String?, flightNumber:String?, timePickerDate:Date, completionHandler: @escaping (_ valid: Bool) -> Void) {
+    func validateFlightNumber(airlineCode:String?, flightNumber:String?, timePickerDate:Date, completionHandler: @escaping (_ valid: Bool, _ date: Date?) -> Void) {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy/MM/dd"
         let date = dateFormatter.string(from: timePickerDate)
@@ -18,27 +18,30 @@ class Flights {
             if let data = res {
                 let flightsArray:NSArray = data["flightStatuses"] as! NSArray
                 if flightsArray.count == 0 {
-                    completionHandler(false)
+                    completionHandler(false, nil)
                 } else {
                     let flightData = flightsArray[0] as? NSDictionary
                     
-                    let flightId = flightData!["flightId"] as? Int
                     let operationalTimes = flightData!["operationalTimes"] as? NSDictionary
                     let estimatedRunwayArrival = operationalTimes!["estimatedRunwayArrival"] as? NSDictionary
-                    let dateLocal = (estimatedRunwayArrival!["dateLocal"] as? String)!
                     
+                    let dateLocal:String
+                    if estimatedRunwayArrival == nil {
+                        let publishedArrival = operationalTimes!["publishedArrival"] as? NSDictionary
+                        dateLocal = (publishedArrival!["dateLocal"] as? String)!
+                    } else {
+                        dateLocal = (estimatedRunwayArrival!["dateLocal"] as? String)!
+                    }
+                
                     // TODO: Convert dateLocal to Date
-                    /*let df = DateFormatter()
-                     df.dateFormat = "yyyy-MM-dd'T'HH:mm:ss"
-                     guard let flightDate = df.date(from: dateLocal) else {
-                     completionHandler(false)
-                     return
-                     }
-                     self.flightArrivalDate = flightDate*/
-                    completionHandler(true)
+                    let formatter = Foundation.DateFormatter()
+                    formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
+                    let flightDate = formatter.date(from: dateLocal)
+                    
+                    completionHandler(true, flightDate)
                 }
             } else {
-                completionHandler(false)
+                completionHandler(false, nil)
             }
         }
     }
